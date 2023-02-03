@@ -13,7 +13,7 @@ const cookies = new Cookies();
 class Login extends Component {
   state ={
     form:{
-      username: '',
+      email: '',
       password: ''
     }
   }
@@ -40,6 +40,7 @@ class Login extends Component {
         cookies.set('nombre', respuesta.nombre, {path: "/"})
         cookies.set('apellido', respuesta.apellido, {path: "/"})
         cookies.set('username', respuesta.username, {path: "/"})
+        cookies.set('email', respuesta.email, {path: "/"})
         alert(`Bienvenido ${respuesta.username}`);
         window.location.href= "./menu";
       }else{
@@ -70,7 +71,7 @@ class Login extends Component {
           <hr></hr>
           <Form.Group>
             <Form.Label>Correo:</Form.Label>
-            <Form.Control name='username' onChange={this.handleChange} type="text" placeholder="Enter email" />
+            <Form.Control name='email' onChange={this.handleChange} type="text" placeholder="Enter email" />
           </Form.Group>
           <Form.Group>
             <Form.Label>Contraseña:</Form.Label>

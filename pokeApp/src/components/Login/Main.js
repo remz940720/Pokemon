@@ -16,11 +16,12 @@ class Main extends Component {
     cookies.remove('nombre', {path: "/"});
     cookies.remove('apellido', {path: "/"});
     cookies.remove('username', {path: "/"});
+    cookies.remove('email', {path: "/"});
     window.location.href = './';
   }
 
   componentDidMount() {
-    if(!cookies.get('username')){
+    if(!cookies.get('email')){
       window.location.href = './';
     }
   }
@@ -30,6 +31,7 @@ class Main extends Component {
     console.log('nombre: '+cookies.get('nombre'));
     console.log('apellido: '+cookies.get('apellido'));
     console.log('username: '+cookies.get('username'));
+    console.log('email: '+cookies.get('email'));
     return(
       <div className='contenedor-main'>
           <div className='pokemon-list'>

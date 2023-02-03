@@ -5,6 +5,7 @@
             "nombre": "Eduardo",
             "apellido": "Muñoz",
             "username": "remz940720",
+            "email": "remz940720@gmail.com",
             "contraseña": "827ccb0eea8a706c4c34a16891f84e7b"
         },
         {
@@ -12,6 +13,7 @@
             "nombre": "Juan",
             "apellido": "Perez",
             "username": "jc94",
+            "email": "jc94@gmail.com",
             "contraseña": "b6af3f19458ec8e6faff8ee1e0440ecb"
         }
     ]
