@@ -15,8 +15,6 @@ Instalar dependencias
 $ npm i
 ```
 
-Iniciar API
-
 Start
 
 ```console
@@ -36,8 +34,6 @@ Instalar dependencias
 ```console
 $ npm i
 ```
-
-Iniciar API
 
 Start
 
