@@ -29,7 +29,7 @@ class Login extends Component {
   }
 
   iniciarSesion = async ()=>{
-    await axios.get(baseUrl, {params: {username : this.state.form.username, password: md5(this.state.form.password)}})
+    await axios.get(baseUrl, {params: {email : this.state.form.email, password: md5(this.state.form.password)}})
     .then(response => {
       return response.data;
     })
@@ -71,11 +71,11 @@ class Login extends Component {
           <hr></hr>
           <Form.Group>
             <Form.Label>Correo:</Form.Label>
-            <Form.Control name='email' onChange={this.handleChange} type="text" placeholder="Enter email" />
+            <Form.Control name='email' onChange={this.handleChange} type="email" required placeholder="Enter email" />
           </Form.Group>
           <Form.Group>
             <Form.Label>Contraseña:</Form.Label>
-            <Form.Control name='password' onChange={this.handleChange} type="password" placeholder="Enter password" />
+            <Form.Control name='password' onChange={this.handleChange} type="password" required placeholder="Enter password" />
           </Form.Group>
           <div className="d-grid gap-2">
             <Button onClick={()=>{this.iniciarSesion()}} className='log-Boton' variant='warning' size='lg'>Log in</Button>
