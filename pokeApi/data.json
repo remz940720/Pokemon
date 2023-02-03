@@ -1,0 +1,18 @@
+{
+    "usuarios": [
+        {
+            "id" : 1,
+            "nombre": "Eduardo",
+            "apellido": "Muñoz",
+            "username": "remz940720",
+            "contraseña": "827ccb0eea8a706c4c34a16891f84e7b"
+        },
+        {
+            "id" : 2,
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "username": "jc94",
+            "contraseña": "b6af3f19458ec8e6faff8ee1e0440ecb"
+        }
+    ]
+}
